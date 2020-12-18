@@ -12,6 +12,11 @@ $(function(){
         $(window).scrollTop(0);
     });
 
+    $('.bar').click(function(){
+        $(this).toggleClass('active');
+        $('#nav').toggleClass('movement');
+    });
+
     $('#email').keyup(function(){
         var email = $('#email').val();
         if(isValidEmail(email)){
